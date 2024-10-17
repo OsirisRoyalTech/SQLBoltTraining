@@ -1,0 +1,14 @@
+Problem 1: Find the title of each film
+  select title from Movies;
+
+Problem 2: Find the director of each film
+  select director from Movies;
+
+Problem 3: Find the title and director of each film
+  select title, director from Movies;
+
+Problem 4: Find the title and year of each film
+  select title, year from Movies;
+
+Problem 5: Find all the information about each film
+  select * from Movies;
