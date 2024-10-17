@@ -1,0 +1,11 @@
+Problem 1: Find the movie with a row id of 6
+  select title from Movies where id = 6;
+
+Problem 2: Find the movies released in the years between 2000 and 2010
+  select title from Movies between 2000 and 2010;
+
+Problem 3: Find the movies not released in the years between 2000 and 2010
+  select title from Movies not between 2000 and 2010;
+
+Problem 4: Find the first 5 Pixar movies and their release year
+  select title from Movies where id in (1,2,3,4,5)
