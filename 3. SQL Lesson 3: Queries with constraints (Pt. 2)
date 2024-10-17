@@ -1,0 +1,11 @@
+Problem 1: Find all the Toy Story movies
+select title from Movies where title like "Toy Story%";
+
+Problem 2: Find all the movies directed by John Lasseter
+select title from Movies where director = ‘John Lasseter’;
+
+Problem 3: Find all the movies (and directors) not directed by John Lasseter
+select title from Movies where director != ‘John Lasseter’;
+
+Problem 4: Find all the WALL-* movies
+select title from Movies where title like ‘WALL-%’;
