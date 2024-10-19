@@ -1,0 +1,13 @@
+Problem 1: List all movies and their combined sales in millions of dollars
+SELECT Title,(Domestic_sales + International_sales)/1000000 as 
+[combined sales] from Movies inner join Boxoffice 
+on Movies.Id = Boxoffice.Movie_id;
+
+Problem 2: List all movies and their ratings in percent
+SELECT Title, round((Rating/10),2)*100 as Ratings from Movies 
+inner join Boxoffice
+on Movies.Id = Boxoffice.Movie_id order by Ratings desc;
+
+Problem 3: List all movies that were released on even number years
+SELECT Title from Movies inner join Boxoffice on 
+Movies.Id = Boxoffice.Movie_id where Year%2=0;
