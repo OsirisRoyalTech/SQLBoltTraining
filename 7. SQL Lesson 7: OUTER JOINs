@@ -1,0 +1,10 @@
+Problem 1: Find the list of all buildings that have employees
+SELECT distinct(Building) FROM employees;
+
+Problem 2: Find the list of all buildings and their capacity
+select * from Buildings;
+
+Problem 3: List all buildings and the distinct employee roles in each building (including empty buildings)
+select distinct(Building_name), Role from Buildings 
+left join
+Employees on Buildings.Building_name = Employees.Building;
