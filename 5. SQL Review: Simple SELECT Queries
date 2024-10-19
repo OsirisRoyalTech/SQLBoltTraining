@@ -1,0 +1,19 @@
+Problem 1: List all the Canadian cities and their populations
+SELECT city,Population FROM north_american_cities where country=’Canada’;
+
+Problem 2: Order all the cities in the United States by their latitude from north to south
+select city from North_american_cities where Country = ‘United States’ 
+order by Latitude desc;
+
+Problem 3: List all the cities west of Chicago, ordered from west to east
+select city from North_american_cities where longitude< 
+(select Longitude from North_american_cities where city = ‘Chicago’ ) 
+order by longitude asc;
+
+Problem 4: List the two largest cities in Mexico (by population)
+select City from North_american_cities where Country = ‘Mexico’ 
+order by population desc limit 2;
+
+Problem 5: List the third and fourth largest cities (by population) in the United States and their population
+select City from North_american_cities where Country = ‘United States’ 
+order by population desc limit 2 offset 2;
