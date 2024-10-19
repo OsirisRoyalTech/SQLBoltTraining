@@ -1,0 +1,14 @@
+Problem 1: Find the domestic and international sales for each movie
+SELECT title, Domestic_sales, International_sales from Movies 
+inner join 
+Boxoffice on Movies.Id = Boxoffice.Movie_id;
+
+Problem 2: Show the sales numbers for each movie that did better internationally rather than domestically
+SELECT title, Domestic_sales, International_sales from Movies 
+inner join 
+Boxoffice on Movies.Id = Boxoffice.Movie_id 
+where International_sales>Domestic_sales order by International_sales desc;
+
+Problem 3: List all the movies by their ratings in descending order
+SELECT title,Rating from Movies inner join Boxoffice on 
+Movies.Id = Boxoffice.Movie_id order by Rating desc;
