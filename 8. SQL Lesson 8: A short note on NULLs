@@ -1,0 +1,7 @@
+Problem 1: Find the name and role of all employees who have not been assigned to a building
+SELECT Name,role from Employees where Building is null;
+
+Problem 2: Find the names of the buildings that hold no employees
+SELECT Building_name from Buildings 
+left join Employees 
+on Buildings.Building_name = Employees.Building where Name is null;
