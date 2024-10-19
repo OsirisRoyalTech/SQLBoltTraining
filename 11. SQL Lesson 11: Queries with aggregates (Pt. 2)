@@ -1,0 +1,10 @@
+Problem 1: Find the number of Artists in the studio (without a HAVING clause)
+select count(Role) from Employees where Role = ‘Artist’;
+
+Problem 2: Find the number of Employees of each role in the studio
+select Role, count(Role) as [number of Employees] from Employees group by Role;
+
+Problem 3: Find the total number of years employed by all Engineers
+select sum(years_employed) as 
+[total number of years employed by all Engineers]
+from Employees group by Role having Role = ‘Engineer’;
