@@ -1,0 +1,7 @@
+Problem 1: Add the studio’s new production, Toy Story 4 to the list of movies (you can use any director)
+  Insert into Movies (Title, director) values(‘Toy Story 4’, ‘Ravi Kumar’);
+
+Problem 2: Toy Story 4 has been released to critical acclaim! It had a rating of 8.7, 
+and made 340 million domestically and 270 million internationally. Add the record to the BoxOffice table.
+  Insert into Boxoffice (Movie_id, Rating, Domestic_sales, 
+  International_sales) values(15, 8.7, 34000000, 27000000);
