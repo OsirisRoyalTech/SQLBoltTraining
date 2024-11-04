@@ -1,0 +1,8 @@
+Problem 1: Find the number of movies each director has directed
+  select Director, count(Title) as [number of movies] from Movies 
+  group by Director;
+
+Problem 2: Find the total domestic and international sales that can be attributed to each director
+  select Director, sum(Domestic_sales) + sum(International_sales) 
+  from Movies inner join Boxoffice on Movies.Id = Boxoffice.Movie_id 
+  group by Director;
