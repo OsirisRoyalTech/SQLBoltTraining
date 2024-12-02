@@ -1,0 +1,5 @@
+Problem 1: Add a column named Aspect_ratio with a FLOAT data type to store the aspect-ratio each movie was released in.
+  Alter table Movies add Aspect_ratio float;
+
+Problem 2: Add another column named Language with a TEXT data type to store the language that the movie was released in. Ensure that the default for this language is English.
+  Alter table Movies add Language varchar(20) default ‘English’;
